@@ -1,0 +1,404 @@
+{ 
+	"data": [
+		{
+			"id": "0",
+			"name": "person",
+			"name_tr": "İnsan"
+		},
+		{
+			"id": "1",
+			"name": "bicyle",
+			"name_tr": "Bisiklet"
+		},
+		{
+			"id": "2",
+			"name": "car",
+			"name_tr": "Araba"
+		},
+		{
+			"id": "3",
+			"name": "motorcycle",
+			"name_tr": "Motorsiklet"
+		},
+		{
+			"id": "4",
+			"name": "airplane",
+			"name_tr": "Uçak"
+		},
+		{
+			"id": "5",
+			"name": "bus",
+			"name_tr": "Otobüs"
+		},
+		{
+			"id": "6",
+			"name": "train",
+			"name_tr": "Tren"
+		},
+		{
+			"id": "7",
+			"name": "truck",
+			"name_tr": "Tır"
+		},
+		{
+			"id": "8",
+			"name": "boat",
+			"name_tr": "Tekne"
+		},
+		{
+			"id": "9",
+			"name": "traffic light",
+			"name_tr": "Trafik Lambası"
+		},
+		{
+			"id": "10",
+			"name": "fire hydrant",
+			"name_tr": "Yangın Musluğu"
+		},
+		{
+			"id": "11",
+			"name": "stop sign",
+			"name_tr": "Dur İşaret Tabelası"
+		},
+		{
+			"id": "12",
+			"name": "parking meter",
+			"name_tr": "Parkmetre"
+		},
+		{
+			"id": "13",
+			"name": "bench",
+			"name_tr": "Bank"
+		},
+		{
+			"id": "14",
+			"name": "bird",
+			"name_tr": "Kuş"
+		},
+		{
+			"id": "15",
+			"name": "cat",
+			"name_tr": "Kedi"
+		},
+		{
+			"id": "16",
+			"name": "dog",
+			"name_tr": "Köpek"
+		},
+		{
+			"id": "17",
+			"name": "horse",
+			"name_tr": "at"
+		},
+		{
+			"id": "18",
+			"name": "sheep",
+			"name_tr": "Kuzu"
+		},
+		{
+			"id": "19",
+			"name": "cow",
+			"name_tr": "İnek"
+		},
+		{
+			"id": "20",
+			"name": "elephant",
+			"name_tr": "Fil"
+		},
+		{
+			"id": "21",
+			"name": "bear",
+			"name_tr": "Ayı"
+		},
+		{
+			"id": "22",
+			"name": "zebra",
+			"name_tr": "Zebra"
+		},
+		{
+			"id": "23",
+			"name": "giraffe",
+			"name_tr": "Zürafa"
+		},
+		{
+			"id": "24",
+			"name": "backpack",
+			"name_tr": "Sırt Çantası"
+		},
+		{
+			"id": "25",
+			"name": "umbrella",
+			"name_tr": "Şemsiye"
+		},
+		{
+			"id": "26",
+			"name": "handbag",
+			"name_tr": "El Çantası"
+		},
+		{
+			"id": "27",
+			"name": "tie",
+			"name_tr": "Kravat"
+		},
+		{
+			"id": "28",
+			"name": "suitcase",
+			"name_tr": "Evrak Çantası"
+		},
+		{
+			"id": "29",
+			"name": "frisbee",
+			"name_tr": "Frizbi"
+		},
+		{
+			"id": "30",
+			"name": "skis",
+			"name_tr": "Kayak"
+		},
+		{
+			"id": "31",
+			"name": "snowboard",
+			"name_tr": "Kayak Tahtası"
+		},
+		{
+			"id": "32",
+			"name": "sports ball",
+			"name_tr": "Top"
+		},
+		{
+			"id": "33",
+			"name": "kite",
+			"name_tr": "Uçurtma"
+		},
+		{
+			"id": "34",
+			"name": "baseball bat",
+			"name_tr": "Beyzbol Sopası"
+		},
+		{
+			"id": "35",
+			"name": "baseball glove",
+			"name_tr": "Beyzbol Eldiveni"
+		},
+		{
+			"id": "36",
+			"name": "skateboard",
+			"name_tr": "Kaykay"
+		},
+		{
+			"id": "37",
+			"name": "surfboard",
+			"name_tr": "Surf Tahtası"
+		},
+		{
+			"id": "38",
+			"name": "tennis racket",
+			"name_tr": "Tenis Raketi"
+		},
+		{
+			"id": "39",
+			"name": "bottle",
+			"name_tr": "Su Şişesi"
+		},
+		{
+			"id": "40",
+			"name": "wine glass",
+			"name_tr": "Şarap Bardağı"
+		},
+		{
+			"id": "41",
+			"name": "cup",
+			"name_tr": "Kupa"
+		},
+		{
+			"id": "42",
+			"name": "fork",
+			"name_tr": "Çatal"
+		},
+		{
+			"id": "43",
+			"name": "knife",
+			"name_tr": "Bıçak"
+		},
+		{
+			"id": "44",
+			"name": "spoon",
+			"name_tr": "Kaşık"
+		},
+		{
+			"id": "45",
+			"name": "bowl",
+			"name_tr": "Kase"
+		},
+		{
+			"id": "46",
+			"name": "banana",
+			"name_tr": "Muz"
+		},
+		{
+			"id": "47",
+			"name": "apple",
+			"name_tr": "Elma"
+		},
+		{
+			"id": "48",
+			"name": "sandwich",
+			"name_tr": "Sandviç"
+		},
+		{
+			"id": "49",
+			"name": "orange",
+			"name_tr": "Portakal"
+		},
+		{
+			"id": "50",
+			"name": "broccoli",
+			"name_tr": "Brokoli"
+		},
+		{
+			"id": "51",
+			"name": "carrot",
+			"name_tr": "Havuv"
+		},
+		{
+			"id": "52",
+			"name": "hot dog",
+			"name_tr": "Sosisli Sandviç"
+		},
+		{
+			"id": "53",
+			"name": "pizza",
+			"name_tr": "Pizza"
+		},
+		{
+			"id": "54",
+			"name": "donut",
+			"name_tr": "Donut"
+		},
+		{
+			"id": "55",
+			"name": "cake",
+			"name_tr": "Pasta"
+		},
+		{
+			"id": "56",
+			"name": "chair",
+			"name_tr": "Sandalye"
+		},
+		{
+			"id": "57",
+			"name": "couch",
+			"name_tr": "Kanepe"
+		},
+		{
+			"id": "58",
+			"name": "potted plant",
+			"name_tr": "Saksı"
+		},
+		{
+			"id": "59",
+			"name": "bed",
+			"name_tr": "Yatak"
+		},
+		{
+			"id": "60",
+			"name": "dining table",
+			"name_tr": "Yemek Masası"
+		},
+		{
+			"id": "61",
+			"name": "toilet",
+			"name_tr": "Klozet"
+		},
+		{
+			"id": "62",
+			"name": "tv",
+			"name_tr": "TV"
+		},
+		{
+			"id": "63",
+			"name": "laptop",
+			"name_tr": "Bilgisayar"
+		},
+		{
+			"id": "64",
+			"name": "mouse",
+			"name_tr": "Fare"
+		},
+		{
+			"id": "65",
+			"name": "remote",
+			"name_tr": "Uzaktan Kumanda"
+		},
+		{
+			"id": "66",
+			"name": "keyboard",
+			"name_tr": "Klavye"
+		},
+		{
+			"id": "67",
+			"name": "cell phone",
+			"name_tr": "Cep Telefonu"
+		},
+		{
+			"id": "68",
+			"name": "microwave",
+			"name_tr": "Mikrodalga"
+		},
+		{
+			"id": "69",
+			"name": "oven",
+			"name_tr": "Fırın"
+		},
+		{
+			"id": "70",
+			"name": "toaster",
+			"name_tr": "Ekmek Kızartma Makinesi"
+		},
+		{
+			"id": "71",
+			"name": "sink",
+			"name_tr": "Lavabo"
+		},
+		{
+			"id": "72",
+			"name": "refrigerator",
+			"name_tr": "Buzdolabı"
+		},
+		{
+			"id": "73",
+			"name": "book",
+			"name_tr": "Kitap"
+		},
+		{
+			"id": "74",
+			"name": "clock",
+			"name_tr": "Saat"
+		},
+		{
+			"id": "75",
+			"name": "vase",
+			"name_tr": "Vazo"
+		},
+		{
+			"id": "76",
+			"name": "scissors",
+			"name_tr": "Makas"
+		},
+		{
+			"id": "77",
+			"name": "teddy bear",
+			"name_tr": "Oyuncak Ayısı"
+		},
+		{
+			"id": "78",
+			"name": "hair drier",
+			"name_tr": "Saç Kurutma Makinesi"
+		},
+		{
+			"id": "79",
+			"name": "toothbrush",
+			"name_tr": "Dış Fırçası"
+		}
+	]
+}

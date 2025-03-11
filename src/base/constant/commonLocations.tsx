@@ -1,0 +1,10 @@
+export const LoginLocation = '/login';
+export const DashboardLocation = '/';
+export const BoundingBoxLocation = '/boundingbox';
+export const ForgetPasswordLocation = '/forget-password';
+export const CreateNewPasswordLocation = '/create-new-password';
+export const ClassLocation = '/class';
+export const SourceLocation = '/source';
+export const DashboardNewGroupDetailLocation = '/dashboard-region-group-detail';
+export const DashboardNewLocation = '/home';
+export const DashboardNewRegionDetailLocation = '/dashboard-region-detail';
