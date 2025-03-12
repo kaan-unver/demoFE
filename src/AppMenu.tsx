@@ -214,9 +214,9 @@ const AppMenu = (props: any) => {
         >
             <div className="menu-logo">
                 <button className="logo p-link">
-                    <img src={`assets/layout/images/logo-${props.colorScheme === 'light' ? 'dark' : 'light'}.png`} alt="logo" hidden={props.menuMode == 'slim' || !props.sidebarActive} onClick={() => navigate('/home')} />
-                    <img src={`assets/layout/images/logo-${props.colorScheme === 'light' ? 'dark' : 'light'}.png`} alt="logo" hidden={props.menuMode !== 'static'} onClick={() => navigate('/home')} />
-                    <img src={`assets/layout/images/logo-${props.colorScheme === 'light' ? 'dark' : 'light'}.png`} alt="logo" hidden={props.menuMode !== 'overlay'} onClick={() => navigate('/home')} />
+                    <img src={`assets/layout/images/20x20.png`} alt="logo" hidden={props.menuMode == 'slim' || !props.sidebarActive} onClick={() => navigate('/home')} />
+                    <img src={`assets/layout/images/20x20.png`} alt="logo" hidden={props.menuMode !== 'static'} onClick={() => navigate('/home')} />
+                    <img src={`assets/layout/images/20x20.png`} alt="logo" hidden={props.menuMode !== 'overlay'} onClick={() => navigate('/home')} />
                     <img src={`assets/layout/images/20x20.png`} alt="logo" hidden={props.menuMode !== 'sidebar' || props.sidebarActive} className="ml-1" onClick={() => navigate('/home')} />
                     <img src={`assets/layout/images/20x20.png`} alt="logo" hidden={props.menuMode !== 'slim'} className="ml-1" onClick={() => navigate('/home')} />
                 </button>

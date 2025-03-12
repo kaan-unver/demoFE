@@ -22,6 +22,7 @@ const responseHandlerLogin = (response: any) => {
 };
 
 const errorHandler = (error: any) => {
+    console.log(error)
     let status = error.response.status;
     if (status === 401) {
         let currentPage = localStorage.getItem('page');
@@ -42,17 +43,17 @@ const errorHandler = (error: any) => {
 const requestHandler = async (request: any) => {
     // Token will be dynamic so we can use any app-specific way to always
     ///fetch the new token before making the call
-    async function getRecaptchaTokenExplicit() {
-        return new Promise((resolve) => {
-            window.grecaptcha.ready(() => {
-                window.grecaptcha.execute(`${process.env.REACT_APP_SITE_KEY}`, { action: 'submit' }).then(function (token: string) {
-                    const result = resolve(token);
-                    return result;
-                });
-            });
-        });
-    }
-    request.headers['X-VerifyKey'] = await getRecaptchaTokenExplicit();
+    // async function getRecaptchaTokenExplicit() {
+    //     return new Promise((resolve) => {
+    //         window.grecaptcha.ready(() => {
+    //             window.grecaptcha.execute(`${process.env.REACT_APP_SITE_KEY}`, { action: 'submit' }).then(function (token: string) {
+    //                 const result = resolve(token);
+    //                 return result;
+    //             });
+    //         });
+    //     });
+    // }
+    // request.headers['X-VerifyKey'] = await getRecaptchaTokenExplicit();
     return request;
 };
 axiosInstanceLogin.interceptors.request.use((request) => requestHandler(request));

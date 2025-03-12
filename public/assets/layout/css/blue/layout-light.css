@@ -511,7 +511,7 @@ body a, body button {
   border-radius: 0px 40px 40px 0px;
   display: flex;
   flex-direction: column;
-  background-color: #FCFAF3;
+  background-color: white;
 }
 .layout-menu-wrapper .menu-logo {
   display: -ms-flexbox;
@@ -1336,7 +1336,7 @@ font-weight: 800 !important;
   color: #718096;
 }
 .layout-menu-wrapper .layout-inline-menu .layout-inline-menu-action-panel .layout-inline-menu-action-item a:hover, .layout-menu-wrapper .layout-inline-menu .layout-inline-menu-action-panel .layout-inline-menu-action-item button:hover {
-  background-color: #F8F3E6;
+  background-color: #9cc0f7;
   color: #034fa0 !important;
   border-right: 4px solid #034fa0;
 }

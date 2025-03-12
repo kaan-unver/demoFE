@@ -4,7 +4,10 @@
     "homepage": ".",
     "private": true,
     "dependencies": {
+        "@bitnoi.se/react-scheduler": "^0.3.1",
         "@blueprintjs/core": "^5.7.1",
+        "@devexpress/dx-react-core": "^4.0.10",
+        "@devexpress/dx-react-scheduler": "^4.0.10",
         "@fileforge/react-print": "^0.1.150",
         "@fullcalendar/core": "^6.1.4",
         "@fullcalendar/daygrid": "^6.1.4",

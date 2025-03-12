@@ -592,7 +592,13 @@ const App = (props: any) => {
                             <div className={window.location.hash.includes('home') ? 'hidden' : ''}>
                                 <BackToHomeBtn />
                             </div>
+                            <div>
+                                <Routes>
+                                    {routeComponents}
+                                </Routes>
+                            </div>
                         </div>
+                        
                         <AppFooter colorScheme={props.colorScheme} />
                     </div>
     

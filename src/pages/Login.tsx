@@ -83,9 +83,11 @@ export const Login = (props: any) => {
         var errorMessage: any = t('error.login.failed');
         var errorType: any = null;
         const loginService = new LoginService();
+        debugger
         loginService
             .Login(email, password)
             .then((response) => {
+                debugger
                 localStorage.setItem('page', '');
                 const data = response.data;
                 const success = response.success;
@@ -116,7 +118,6 @@ export const Login = (props: any) => {
                         severity: 'warn',
                         position: 'top',
                         duration: 5000,
-                        type: errorType
                     };
                     store.dispatch({
                         type: 'Show_Toast',
@@ -124,7 +125,6 @@ export const Login = (props: any) => {
                             id: Guid.create(),
                             summary: item.summary,
                             message: item.message,
-                            type: item.type,
                             severity: item.severity,
                             date: new Date(),
                             position: item.position,
@@ -135,6 +135,7 @@ export const Login = (props: any) => {
                 }
             })
             .catch((error: any) => {
+                console.log(error)
                 localStorage.setItem('page', '');
                 if (error != null && error.data != null && error.data.messages != null) {
                     const item = {
@@ -174,7 +175,7 @@ export const Login = (props: any) => {
                     <div className="login-form-main-box">
                         <div className="login-box" style={{display: !signUpVisible ? '' : 'none'}}>
                             <img src={`assets/login/logo.png`} alt="logo" style={{ width: '400px', marginBottom: '40px' }} />
-                            <form className="form-container" onSubmit={login} noValidate>
+                            <form className="form-container">
                                 <div className="form-main-layout">
                                     <div>
                                         <span className="p-input-icon-left w-full">

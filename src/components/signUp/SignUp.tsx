@@ -64,12 +64,13 @@ const SignUp = (props: any) => {
                     props.setSignUpVisible(false);
                     setEmail('');
                     setPassword('');
-                    setFirstName('');
+                    setFirstName('');   
                     setMiddleName('');
                     setLastName('');
                     setTel('');
                     setPhoto('');
                     setInputType('password')
+                    setSubmitted(false)
                     setIsLoading(false);
                 })
                 .catch((error) => {
@@ -155,7 +156,7 @@ const SignUp = (props: any) => {
                     <label>{t('password')}*</label>
                     <span className="p-input-icon-right w-full">
                         <i id='beholder' className="pi pi-eye" style={{cursor:'pointer'}} onClick={() => {passwordVisible()}}></i>
-                        <InputText id="passwordSU" required value={password} onChange={(e) => setPassword(e.target.value.trim())} className={classNames({ 'p-invalid': submitted && !password }, 'w-full')} />
+                        <InputText id="passwordSU" type={inputType} required value={password} onChange={(e) => setPassword(e.target.value.trim())} className={classNames({ 'p-invalid': submitted && !password }, 'w-full')} />
                     </span>
                     {submitted && !password && <small className="p-invalid">{t('required.field')}</small>}
                 </div>
