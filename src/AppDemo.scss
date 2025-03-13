@@ -1,15 +1,7 @@
 @import './assets/flags/flags.css';
 @import '../node_modules/react-phone-number-input/style.css?v=0.1';
 @import '../node_modules/react-tooltip/dist/react-tooltip.css?v=0.1';
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
-
+@import "react-datetime/css/react-datetime.css";
 .apexcharts-tooltip {
     background: lightblue;
     color: darkblue;
@@ -1543,4 +1535,8 @@ pre.app-code {
 
 input#calendar::placeholder{
     color: #034fa0!important;
+}
+
+.rdtPicker {
+    width: 100%;
 }

@@ -2,47 +2,59 @@ import { Button } from 'primereact/button';
 import { Toolbar } from 'primereact/toolbar';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ScheduleComponent, Inject } from '@syncfusion/ej2-react-schedule';
+import Scheduler from '../components/Scheduler';
+import AddMeetingModal from '../components/AddMeetingModal';
+import MeetingService from '../service/MeetingService';
 export const Schedule = () => {
     const { t } = useTranslation();
+    const [addModalVisible, setAddModalVisible] = useState<boolean>(false);
+    const [meetings, setMeetings] = useState<any>([]);
+    const hideDialog = () => {
+        setAddModalVisible(false);
+    };
+    const meetingService = new MeetingService();
     const leftToolbarTemplate = () => {
         return (
             <React.Fragment>
-                <Button label={t('label.add')} icon="pi pi-plus" className="p-button-success mr-2 mb-2" />
+                <Button label={t('label.add')} icon="pi pi-plus" className="p-button-success mr-2 mb-2" onClick={() => setAddModalVisible(true)} />
                 <Button label={t('label.delete')} icon="pi pi-trash" className="p-button-danger mb-2" />
             </React.Fragment>
         );
     };
-    const [filterButtonState, setFilterButtonState] = useState(0);
-
-    const [range, setRange] = useState({
-        startDate: new Date(),
-        endDate: new Date()
-    });
-
-    const handleRangeChange = useCallback((range: any) => {
-        setRange(range);
-    }, []);
-    const data = [
-        {
-            Id: 1,
-            Subject: 'Meeting',
-            StartTime: new Date(2023, 1, 15, 10, 0),
-            EndTime: new Date(2023, 1, 15, 12, 30)
+    useEffect(() => {
+        if (meetings.length < 1) {
+            getAll();
         }
-    ];
+    });
+    const getAll = () => {
+        meetingService.getAll().then((response) => {
+            if (response.data.data) {
+                setMeetings(
+                    response.data.data.map((e: any) => ({
+                        title: e.title,
+                        startDate: new Date(e.startDate),
+                        endDate: new Date(e.endDate),
+                        id: e.id,
+                        location: '',
+                        description: e.description
+                    }))
+                );
+            }
+        });
+    }
+    const changeSelectedMeeting = useCallback((e: any) => {
+        meetingService.delete(e).then((response) => {
+            let _meetings = meetings.filter((item: any) => e != item.id);
+            setMeetings(_meetings);
+        });
+    }, []);
     return (
         <div className="grid crud-demo">
             <div className="col-12">
                 <div className="card">
                     <Toolbar className="mb-4" left={leftToolbarTemplate}></Toolbar>
-                    <ScheduleComponent
-                        selectedDate={new Date(2023, 1, 15)}
-                        eventSettings={{
-                            dataSource: data
-                        }}
-                    >
-                    </ScheduleComponent>
+                    <Scheduler setSelectedMeeting={changeSelectedMeeting} data={meetings} />
+                    {addModalVisible && <AddMeetingModal visibleModal={addModalVisible} getAll={getAll} hideDialog={hideDialog} />}
                 </div>
             </div>
         </div>

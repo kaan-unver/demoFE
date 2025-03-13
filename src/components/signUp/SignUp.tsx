@@ -161,10 +161,10 @@ const SignUp = (props: any) => {
                     {submitted && !password && <small className="p-invalid">{t('required.field')}</small>}
                 </div>
                 <div className="field">
-                    <label>{t('profile.photo')}</label>
+                    <label>{t('profile.photo')}(png, jpg, jpeg)</label>
                     <span>
                         <div style={{ border: '1px solid #249ee4', borderRadius: '5px' }}>
-                            <input className="my-4 mx-2" type="file" accept="image/png, image/jpeg" onChange={(e: any) => setPhoto(e.target.files[0])} />
+                            <input className="my-4 mx-2" type="file" accept="image/png, image/jpg, image/jpeg" onChange={(e: any) => setPhoto(e.target.files[0])} />
                         </div>
                     </span>
                 </div>
