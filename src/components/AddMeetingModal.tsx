@@ -102,12 +102,12 @@ const MeetingAddModal = (props: any) => {
         <Dialog visible={props.visibleModal} style={{ width: '450px', maxWidth: '95%' }} header={t('add.meeting')} modal className="p-fluid" footer={addMeetingDialogFooter} onHide={props.hideDialog}>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 <div className="field col-12 mb-2 py-0">
-                    <label htmlFor="calendar">{t('startDate')}*</label>
+                    <label htmlFor="calendar">{t('start.date')}*</label>
                         <Datetime inputProps={{ className: 'p-inputtext' }} onChange={(e) => setStardDate(e)} />
                     {submitted && !startDate && <small className="p-invalid">{t('required.field')}</small>}
                 </div>
                 <div className="field col-12 mb-2 py-0">
-                    <label htmlFor="calendar">{t('endDate')}*</label>
+                    <label htmlFor="calendar">{t('end.date')}*</label>
                     <Datetime inputProps={{ className: 'p-inputtext' }} onChange={(e) => setEndDate(e)} />
                     {submitted && !endDate && <small className="p-invalid">{t('required.field')}</small>}
                 </div>
@@ -117,7 +117,7 @@ const MeetingAddModal = (props: any) => {
                     {submitted && !title && <small className="p-invalid">{t('required.field')}</small>}
                 </div>
                 <div className="field col-12 mb-2 py-0">
-                    <label htmlFor="description">{t('description')}</label>
+                    <label htmlFor="description">{t('desc')}</label>
                     <InputText id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
                 </div>
                 <div className="field col-12 mb-2 py-0">

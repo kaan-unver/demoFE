@@ -114,6 +114,7 @@ export default class Demo extends React.PureComponent {
         >
           <ViewState
             currentDate={currentDate}
+            
           />
           <EditingState
             onCommitChanges={this.commitChanges}

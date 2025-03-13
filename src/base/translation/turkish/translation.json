@@ -1016,5 +1016,8 @@
     "no": "Hayır",
     "sign.up": "Kullanıcı Oluştur",
     "back":"Geri Dön", 
-    "profile.photo":"Profile Photo"
+    "profile.photo":"Profile Photo",
+    "add.meeting":"Toplantı Ekle",
+    "title":"Başlık",
+    "file":"Dosya"
 }
