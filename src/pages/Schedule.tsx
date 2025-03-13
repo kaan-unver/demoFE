@@ -17,7 +17,6 @@ export const Schedule = () => {
         return (
             <React.Fragment>
                 <Button label={t('label.add')} icon="pi pi-plus" className="p-button-success mr-2 mb-2" onClick={() => setAddModalVisible(true)} />
-                <Button label={t('label.delete')} icon="pi pi-trash" className="p-button-danger mb-2" />
             </React.Fragment>
         );
     };

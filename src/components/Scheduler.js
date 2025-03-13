@@ -95,7 +95,6 @@ export default class Demo extends React.PureComponent {
       }
       if (deleted !== undefined) {
         this.props.setSelectedMeeting(deleted)
-        data = data.filter(appointment => appointment.id !== deleted);
       }
       return { data };
     });
